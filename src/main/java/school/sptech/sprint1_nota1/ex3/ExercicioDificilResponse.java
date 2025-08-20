@@ -1,27 +1,20 @@
 package school.sptech.sprint1_nota1.ex3;
 
 public class ExercicioDificilResponse {
-    public Integer soma;
-    public Integer enesimoTermo;
+    private int enesimoTermo;
+    private int soma;
 
-    public ExercicioDificilResponse(Integer soma, Integer enesimoTermo) {
-        this.soma = soma;
+    //jogar o construc aq
+    public ExercicioDificilResponse(int enesimoTermo, int soma) {
         this.enesimoTermo = enesimoTermo;
-    }
-
-    public Integer getSoma() {
-        return soma;
-    }
-
-    public void setSoma(Integer soma) {
         this.soma = soma;
     }
 
-    public Integer getEnesimoTermo() {
+    public int getEnesimoTermo() {
         return enesimoTermo;
     }
 
-    public void setEnesimoTermo(Integer enesimoTermo) {
-        this.enesimoTermo = enesimoTermo;
+    public int getSoma() {
+        return soma;
     }
 }
