@@ -12,7 +12,7 @@ public class ExercicioFacilController {
         palavra = palavra.toLowerCase(); // se tirar da B.O
 
         for (int comeco = 0; comeco < palavra.length() / 2; comeco++) {
-            int fim = palavra.length() - comeco;
+            int fim = palavra.length() -1 - comeco;
             if (palavra.charAt(comeco) != palavra.charAt(fim)) {
                 return false;
             }
